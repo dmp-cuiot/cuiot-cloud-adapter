@@ -1,0 +1,7 @@
+/generic-protocol-example/target/
+/generic-protocol-maven-demo/target/
+/generic-protocol-sdk/target/
+/.idea/
+/generic-protocol-sdk/generic-protocol-sdk.iml
+/generic-protocol-example/generic-protocol-example.iml
+/generic-protocol-maven-demo/generic-protocol-maven-demo.iml

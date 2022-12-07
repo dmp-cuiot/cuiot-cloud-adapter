@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <Properties>
+        <Property name="pattern">%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] [%thread] [%F:%L] - %msg%n</Property>
+    </Properties>
+    <!-- 先定义所有的appender -->
+    <Appenders>
+        <!-- 这个输出控制台的配置 -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>${pattern}</Pattern>
+            </PatternLayout>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <!-- root是默认的logger，也就是公共的logger，供记录一些不常打印的系统参数或者其他组件参数 -->
+        <AsyncRoot level="INFO" includeLocation="true" additivity="false">
+            <AppenderRef ref="Console"/>
+        </AsyncRoot>
+    </Loggers>
+</configuration>

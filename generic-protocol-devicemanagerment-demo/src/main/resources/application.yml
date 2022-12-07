@@ -1,0 +1,18 @@
+server:
+  port: 8533
+
+cloud:
+  platform:
+    #平台侧OpenAPI的统一域名
+    server: http://172.30.127.31:8080
+    apiUrl:
+      #新增单个设备URL地址
+      addDevice: /dmpApi/device/v1/createDevice
+      #删除单个设备URL地址
+      deleteDevice: /dmpApi/device/v1/deleteDevice
+      #批量新增设备URL地址
+      batchAddDevice: /dmpApi/device/v1/batchCreateDevice
+      #批量删除设备URL地址
+      batchDeleteDevice: /dmpApi/device/v1/batchDeleteDevice
+      #查询指定设备信息
+      getDevice: /dmpApi/device/v1/getDevice
